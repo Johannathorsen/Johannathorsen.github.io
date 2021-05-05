@@ -1,12 +1,13 @@
 import Draggabilly from 'draggabilly';
-import './style.scss';
+import './styles/main.scss';
 
 function component() {
     const element = document.createElement('div');
-    element.id = 'hej';
-    element.innerText = "Drag me around";
+    element.id = 'johanna';
     element.style = "cursor:pointer;";
-    new Draggabilly( element);
+    new Draggabilly( element, {
+        axis: 'x'
+    });
   
     return element;
   }

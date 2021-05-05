@@ -1,0 +1,22 @@
+@import './variables.scss';
+
+@font-face {
+  font-family: "Raleway";
+	font-weight: 100 1000;
+	font-stretch: 25% 151%;
+  src: url("../assets/fonts/Raleway-VariableFont_wght.ttf") format('truetype');
+}
+
+body {
+  color: $black;
+  font-family: "Raleway", sans-serif;
+  background-color: $white;
+}
+
+#johanna {
+  background-image: url(../assets/IMG_0965.jpeg);
+  background-size: cover;
+  background-repeat:   no-repeat;
+  height: 324px;
+  width: 225px;
+}
