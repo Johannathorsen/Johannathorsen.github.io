@@ -11,12 +11,14 @@ class JohannaStart extends HTMLElement {
 
     connectedCallback() {
         this.innerHTML = `
-            <h1>johanna thorsen</h1>
-            <h2>projects</h2>
             <img src="${hill1}" class="hill-1"/>
             <img src="${hill2}" class="hill-2"/>
             <img src="${hill3}" class="hill-3"/>
             <img src="${hill4}" class="hill-4"/>
+            <div class="headings">
+                <h1>johanna thorsen</h1>
+                <h2>projects</h2>
+            </div>
         `;
     }
 }
