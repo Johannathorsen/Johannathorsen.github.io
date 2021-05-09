@@ -1,15 +1,4 @@
-import Draggabilly from 'draggabilly';
 import './styles/main.scss';
+import './views';
 
-function component() {
-    const element = document.createElement('div');
-    element.id = 'johanna';
-    element.style = "cursor:pointer;";
-    new Draggabilly( element, {
-        axis: 'x'
-    });
-  
-    return element;
-  }
-  
-  document.body.appendChild(component());
+document.querySelector('.content').appendChild(document.createElement('johanna-start'));

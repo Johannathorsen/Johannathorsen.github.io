@@ -1,0 +1,53 @@
+@import './variables.scss';
+
+johanna-start {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+
+    h1 {
+        background: $white;
+        width: fit-content;
+        padding: 0.2em 0.4em;
+        z-index: 1;
+        margin-bottom: 0.4em;
+        text-align: center;
+    }
+
+    h2 {
+        background: $white;
+        width: fit-content;
+        padding: 0.2em;
+        z-index: 1;
+        margin-top: 0;
+        font-weight: 500;
+    }
+
+    .hill {
+        position: absolute;
+        bottom: 0;
+    }
+
+    .hill-1 {
+        @extend .hill;
+        right: 0;
+    }
+
+    .hill-2 {
+        @extend .hill;
+        left: 0;
+    }
+
+    .hill-3 {
+        @extend .hill;
+        right: 0;
+    }
+
+    .hill-4 {
+        @extend .hill;
+        left: 0;
+    }
+}
