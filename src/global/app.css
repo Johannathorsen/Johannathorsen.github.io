@@ -1,0 +1,22 @@
+/*
+  Global App CSS
+  ----------------------
+  Use this file for styles that should be applied to all components.
+  For example, "font-family" within the "body" selector is a CSS property
+  most apps will want applied to all components.
+
+  Any global CSS variables should also be applied here.
+*/
+
+@font-face {
+  font-family: "Raleway";
+  font-weight: 100 1000;
+  font-stretch: 25% 151%;
+  src: url("./fonts/Raleway-VariableFont_wght.ttf") format('truetype');
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Raleway', sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+}

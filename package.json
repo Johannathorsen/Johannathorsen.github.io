@@ -1,24 +1,25 @@
 {
-  "name": "johannathorsen.github.io",
-  "version": "1.0.0",
+  "name": "stencil-jojo-smaller",
+  "private": true,
+  "version": "0.0.1",
+  "description": "Stencil App Starter",
   "scripts": {
-    "build": "webpack"
+    "build": "stencil build",
+    "start": "stencil build --dev --watch --serve",
+    "test": "stencil test --spec --e2e",
+    "test.watch": "stencil test --spec --e2e --watchAll",
+    "generate": "stencil generate"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Johannathorsen/johannathorsen.github.io.git"
-  },
-  "author": "Johanna Thorsen",
-  "license": "ISC",
   "devDependencies": {
-    "css-loader": "^5.2.4",
-    "sass": "^1.32.11",
-    "sass-loader": "^11.0.1",
-    "style-loader": "^2.0.0",
-    "webpack": "^5.35.1",
-    "webpack-cli": "^4.6.0"
+    "@stencil/core": "^2.0.0",
+    "@stencil/router": "^1.0.1",
+    "@stencil/sass": "^1.4.1",
+    "@types/jest": "^26.0.21",
+    "@types/puppeteer": "^5.4.3",
+    "jest": "^26.6.3",
+    "jest-cli": "^26.6.3",
+    "puppeteer": "^5.5.0",
+    "workbox-build": "^4.3.1"
   },
-  "dependencies": {
-    "draggabilly": "^2.3.0"
-  }
+  "license": "MIT"
 }

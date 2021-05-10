@@ -1,0 +1,71 @@
+.app-start {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  background-color: $white;
+
+  a {
+    text-decoration: none;
+  }
+
+  .headings {
+    width: fit-content;
+    position: absolute;
+    top: 30%;
+    right: 0;
+    left: 0;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  h1 {
+      background: $white;
+      width: fit-content;
+      padding: 0.2em 0.4em;
+      margin-bottom: 0.4em;
+      text-align: center;
+  }
+
+  h2 {
+    color: black;
+    background: $white;
+    width: fit-content;
+    padding: 0.2em;
+    margin-top: 0;
+    font-weight: 500;
+  }
+
+  .hill {
+    position: absolute;
+    bottom: 0;
+  }
+    
+  .hill-1 {
+    @extend .hill;
+    right: -1px;
+    height: 75%;
+  }
+    
+  .hill-2 {
+    @extend .hill;
+    left: 0;
+    height: 81%;
+  }
+    
+  .hill-3 {
+    @extend .hill;
+    right: 0;
+    height: 48%;
+  }
+  
+  .hill-4 {
+    @extend .hill;
+    left: 0;
+    height: 42%;
+  }
+}
