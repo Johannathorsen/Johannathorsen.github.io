@@ -5,10 +5,6 @@ import hill3 from '../assets/hill-3.svg';
 import hill4 from '../assets/hill-4.svg';
 
 class JohannaStart extends HTMLElement {
-    constructor() {
-        super();
-    }
-
     connectedCallback() {
         this.innerHTML = `
             <img src="${hill1}" class="hill-1"/>
