@@ -11,6 +11,7 @@ export namespace Components {
         "match": MatchResults;
     }
     interface AppRoot {
+        "url": String;
     }
     interface AppStart {
     }
@@ -45,6 +46,7 @@ declare namespace LocalJSX {
         "match"?: MatchResults;
     }
     interface AppRoot {
+        "url"?: String;
     }
     interface AppStart {
     }

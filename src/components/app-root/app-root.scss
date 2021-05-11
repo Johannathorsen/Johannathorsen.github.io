@@ -1,0 +1,78 @@
+.app-root {
+    height: 100%;
+    width: 100%;
+    background-color: $white;
+
+    main {
+        height: calc(100% - 80px);
+        width: 100%;
+    }
+}
+
+header {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    display: flex;
+    align-items: center;
+
+    &.start {
+        h1 {
+            top: 30%;
+            left: calc(50% - 145px);
+            transition-property: top, left;
+            transition-duration: .5s;
+            transition-timing-function: linear;
+        }
+        h2 {
+            top: calc(30% + 60px);
+            right: calc(50% - 50px);
+            transition-property: top, right;
+            transition-duration: .5s;
+            transition-timing-function: linear;
+        }
+    }
+
+    &.subpage {
+        h1 {
+            top: 0;
+            left: 0;
+            transition-property: top, left;
+            transition-duration: .5s;
+            transition-timing-function: linear;
+
+        }
+        h2 {
+            top: 0;
+            right: 0;
+            transition-property: top, right;
+            transition-duration: .5s;
+            transition-timing-function: linear;
+        }
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    .headings {
+        position: absolute;
+        background: $white;
+        width: fit-content;
+        text-align: center;
+        margin: 0.2em;
+        color: black;
+        z-index: 1;
+    }
+
+    h1 {
+        @extend .headings;
+        padding: 0.2em 0.4em;
+    }
+  
+    h2 {
+        @extend .headings;
+        padding: 0.2em;
+        font-weight: 500;
+    }
+}
