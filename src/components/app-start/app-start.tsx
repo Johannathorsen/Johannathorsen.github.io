@@ -9,7 +9,7 @@ import { Component, h, getAssetPath } from '@stencil/core';
 export class AppStart {
   render() {
     return (
-      <div class="app-start">
+      <div class="app-start fade-in">
         <img src={getAssetPath('./assets/hill-1.svg')} class="hill-1"/>
         <img src={getAssetPath('./assets/hill-2.svg')} class="hill-2"/>
         <img src={getAssetPath('./assets/hill-3.svg')} class="hill-3"/>
