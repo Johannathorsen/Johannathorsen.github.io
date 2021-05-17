@@ -51,10 +51,10 @@ export class AppRoot {
       <div class="app-root">
          <header class={this.url === '/' ? 'start' : 'subpage'}>
          <stencil-route-link url="/">
-            <h1>johanna thorsen</h1>
+            <h1 class={this.url === '/' ? 'active' : ''}>johanna thorsen</h1>
           </stencil-route-link>
           <stencil-route-link url="/projects">
-            <h2>projects</h2>
+            <h2 class={this.url === '/projects' ? 'active' : ''}>projects</h2>
           </stencil-route-link>
         </header>
         <main>

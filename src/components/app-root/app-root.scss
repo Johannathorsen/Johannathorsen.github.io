@@ -23,14 +23,14 @@ header {
             left: calc(50% - 145px);
             transition-property: top, left;
             transition-duration: .5s;
-            transition-timing-function: linear;
+            transition-timing-function: ease;
         }
         h2 {
             top: calc(30% + 60px);
             right: calc(50% - 50px);
             transition-property: top, right;
             transition-duration: .5s;
-            transition-timing-function: linear;
+            transition-timing-function: ease;
         }
     }
 
@@ -40,7 +40,7 @@ header {
             left: 0;
             transition-property: top, left;
             transition-duration: .5s;
-            transition-timing-function: linear;
+            transition-timing-function: ease;
 
         }
         h2 {
@@ -48,7 +48,11 @@ header {
             right: 0;
             transition-property: top, right;
             transition-duration: .5s;
-            transition-timing-function: linear;
+            transition-timing-function: ease;
+        }
+
+        .active {
+            text-decoration: underline;
         }
     }
 
@@ -56,9 +60,13 @@ header {
         text-decoration: none;
     }
 
+    .active {
+        cursor: default;
+    }
+
     .headings {
         position: absolute;
-        background: $white;
+        background-color: $white;
         width: fit-content;
         text-align: center;
         margin: 0.2em;
