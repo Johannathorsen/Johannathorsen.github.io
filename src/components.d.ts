@@ -7,7 +7,7 @@
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 import { MatchResults } from "@stencil/router";
 export namespace Components {
-    interface AppProfile {
+    interface AppProjects {
         "match": MatchResults;
     }
     interface AppRoot {
@@ -17,11 +17,11 @@ export namespace Components {
     }
 }
 declare global {
-    interface HTMLAppProfileElement extends Components.AppProfile, HTMLStencilElement {
+    interface HTMLAppProjectsElement extends Components.AppProjects, HTMLStencilElement {
     }
-    var HTMLAppProfileElement: {
-        prototype: HTMLAppProfileElement;
-        new (): HTMLAppProfileElement;
+    var HTMLAppProjectsElement: {
+        prototype: HTMLAppProjectsElement;
+        new (): HTMLAppProjectsElement;
     };
     interface HTMLAppRootElement extends Components.AppRoot, HTMLStencilElement {
     }
@@ -36,13 +36,13 @@ declare global {
         new (): HTMLAppStartElement;
     };
     interface HTMLElementTagNameMap {
-        "app-profile": HTMLAppProfileElement;
+        "app-projects": HTMLAppProjectsElement;
         "app-root": HTMLAppRootElement;
         "app-start": HTMLAppStartElement;
     }
 }
 declare namespace LocalJSX {
-    interface AppProfile {
+    interface AppProjects {
         "match"?: MatchResults;
     }
     interface AppRoot {
@@ -51,7 +51,7 @@ declare namespace LocalJSX {
     interface AppStart {
     }
     interface IntrinsicElements {
-        "app-profile": AppProfile;
+        "app-projects": AppProjects;
         "app-root": AppRoot;
         "app-start": AppStart;
     }
@@ -60,7 +60,7 @@ export { LocalJSX as JSX };
 declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
-            "app-profile": LocalJSX.AppProfile & JSXBase.HTMLAttributes<HTMLAppProfileElement>;
+            "app-projects": LocalJSX.AppProjects & JSXBase.HTMLAttributes<HTMLAppProjectsElement>;
             "app-root": LocalJSX.AppRoot & JSXBase.HTMLAttributes<HTMLAppRootElement>;
             "app-start": LocalJSX.AppStart & JSXBase.HTMLAttributes<HTMLAppStartElement>;
         }

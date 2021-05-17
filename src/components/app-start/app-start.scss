@@ -12,25 +12,52 @@
     
   .hill-1 {
     @extend .hill;
-    right: -1px;
+    animation: MoveUpDown 2s ease infinite, MoveRightLeft 3s ease infinite;
     height: 75%;
   }
     
   .hill-2 {
     @extend .hill;
-    left: 0;
+    animation: MoveUpDown 3s ease infinite, MoveLeftRight 3s ease infinite;
     height: 81%;
   }
     
   .hill-3 {
     @extend .hill;
-    right: 0;
+    animation: MoveUpDown 5s ease infinite, MoveRightLeft 3s ease infinite;
     height: 48%;
   }
   
   .hill-4 {
     @extend .hill;
-    left: 0;
+    animation: MoveUpDown 4s ease infinite, MoveLeftRight 3s ease infinite;
     height: 42%;
+  }
+}
+
+@keyframes MoveUpDown {
+  0%, 100% {
+    bottom: 0;
+  }
+  50% {
+    bottom: -1%;
+  }
+}
+
+@keyframes MoveLeftRight {
+  0%, 100% {
+    left: 0;
+  }
+  50% {
+    left: -1%;
+  }
+}
+
+@keyframes MoveRightLeft {
+  0%, 100% {
+    right: -1px;
+  }
+  50% {
+    right: -1%;
   }
 }

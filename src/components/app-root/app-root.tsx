@@ -53,7 +53,7 @@ export class AppRoot {
          <stencil-route-link url="/">
             <h1>johanna thorsen</h1>
           </stencil-route-link>
-          <stencil-route-link url="/profile/johanna">
+          <stencil-route-link url="/projects">
             <h2>projects</h2>
           </stencil-route-link>
         </header>
@@ -61,7 +61,7 @@ export class AppRoot {
           <stencil-router>
             <stencil-route-switch scrollTopOffset={0}>
               <stencil-route url="/" component="app-start" exact={true} />
-              <stencil-route url="/profile/:name" component="app-profile" />
+              <stencil-route url="/projects" component="app-projects" />
             </stencil-route-switch>
           </stencil-router>
         </main>

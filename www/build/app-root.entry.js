@@ -39,7 +39,7 @@ const AppRoot = class {
     this.url = window.location.pathname;
   }
   render() {
-    return (h("div", { class: "app-root" }, h("header", { class: this.url === '/' ? 'start' : 'subpage' }, h("stencil-route-link", { url: "/" }, h("h1", null, "johanna thorsen")), h("stencil-route-link", { url: "/profile/johanna" }, h("h2", null, "projects"))), h("main", null, h("stencil-router", null, h("stencil-route-switch", { scrollTopOffset: 0 }, h("stencil-route", { url: "/", component: "app-start", exact: true }), h("stencil-route", { url: "/profile/:name", component: "app-profile" }))))));
+    return (h("div", { class: "app-root" }, h("header", { class: this.url === '/' ? 'start' : 'subpage' }, h("stencil-route-link", { url: "/" }, h("h1", null, "johanna thorsen")), h("stencil-route-link", { url: "/projects" }, h("h2", null, "projects"))), h("main", null, h("stencil-router", null, h("stencil-route-switch", { scrollTopOffset: 0 }, h("stencil-route", { url: "/", component: "app-start", exact: true }), h("stencil-route", { url: "/projects", component: "app-projects" }))))));
   }
 };
 AppRoot.style = appRootCss;
